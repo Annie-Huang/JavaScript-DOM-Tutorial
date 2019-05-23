@@ -1,7 +1,23 @@
 https://www.youtube.com/playlist?list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V
+https://github.com/iamshaunjp/JavaScript-DOM-Tutorial/tree/lesson-1
 
-
-D:\react\JavaScript-DOM-Tutorial>git init
+:\react\JavaScript-DOM-Tutorial>git init
 Initialized empty Git repository in D:/react/JavaScript-DOM-Tutorial/.git/
+
+D:\react\JavaScript-DOM-Tutorial>git remote add origin git@github.com:Annie-Huang/JavaScript-DOM-Tutorial.git
+
+D:\react\JavaScript-DOM-Tutorial>git add .
+
+D:\react\JavaScript-DOM-Tutorial>git commit
+[master (root-commit) 6d64757] first commit
+ 3 files changed, 8 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Note.txt
+ create mode 100644 annie.txt
+
+D:\react\JavaScript-DOM-Tutorial>git push -u origin master
+
+
+
 
 
