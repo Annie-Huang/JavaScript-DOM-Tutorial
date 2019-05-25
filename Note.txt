@@ -65,10 +65,12 @@ banner.nodeName		<< return div
 banner.hasChildNodes()	<< return true
 banner.cloneNode(true);	<< clone node with its child
 
-
-
-
-
+const bookList = document.querySelector('#book-list');
+bookList.parentNode
+bookList.parentElement
+bookList.parentElement.parentElement
+bookList.childNodes	<< return [text, h2.title, text, ul, text], which include all linebreak characters as well. Not useful. Use children instead.
+bookList.children
 
 
 

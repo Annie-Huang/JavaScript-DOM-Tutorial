@@ -76,16 +76,31 @@
 // // bookList.innerHTML = '<h2>Books and more books...</h2>';
 // bookList.innerHTML += '<p>This is how you add HTML</p>';
 
-// #6 - Nodes
-const banner = document.querySelector('#page-banner');
-// https://www.w3schools.com/jsref/prop_node_nodetype.asp
-console.log('#page-banner node type is:', banner.nodeType); // return 1, which is Element
-console.log('#page-banner node name is:', banner.nodeName); // return div
-console.log('#page-banner has child nodes is:', banner.hasChildNodes()); // return div
+// // #6 - Nodes
+// const banner = document.querySelector('#page-banner');
+// // https://www.w3schools.com/jsref/prop_node_nodetype.asp
+// console.log('#page-banner node type is:', banner.nodeType); // return 1, which is Element
+// console.log('#page-banner node name is:', banner.nodeName); // return div
+// console.log('#page-banner has child nodes is:', banner.hasChildNodes()); // return div
+//
+// const clonedBanner = banner.cloneNode(false);
+// // const clonedBanner = banner.cloneNode(true); // true means clone its children as well.
+// console.log(clonedBanner);
 
-const clonedBanner = banner.cloneNode(false);
-// const clonedBanner = banner.cloneNode(true); // true means clone its children as well.
-console.log(clonedBanner);
+
+// // #7 - Traversing the DOM (part 1)
+// const bookList = document.querySelector('#book-list');
+//
+// // by 99%, the followings are going to return the same thing.
+// console.log('the parent node is:', bookList.parentNode);
+// console.log('the parent element is:', bookList.parentElement);
+// console.log('the parent element is:', bookList.parentElement.parentElement);
+//
+// // Will return [text, h2.title, text, ul, text] and the text is newline character, so no useful.
+// // That is why we don't really want to grab these, that is why we use children than childNode
+// console.log(bookList.childNodes);
+// console.log(bookList.children); // returns [h2.title, ul]
+
 
 console.log(document);
 
