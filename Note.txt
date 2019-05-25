@@ -69,11 +69,15 @@ const bookList = document.querySelector('#book-list');
 bookList.parentNode
 bookList.parentElement
 bookList.parentElement.parentElement
+
 bookList.childNodes	<< return [text, h2.title, text, ul, text], which include all linebreak characters as well. Not useful. Use children instead.
-bookList.children
+bookList.children	<< retrurn [h2.title, ul]
 
-
-
+bookList.nextSibling	<< return #text, the line break character again.
+bookList.nextElementSibling	<< return the <form> now
+bookList.previousSibling
+bookList.previousElementSibling
+bookList.previousElementSibling.querySelector('p').innerHTML += '<br>Too cool for everyone else!';
 
 
 
