@@ -17,6 +17,48 @@ D:\react\JavaScript-DOM-Tutorial>git commit
 
 D:\react\JavaScript-DOM-Tutorial>git push -u origin master
 
+#################################################################################
+
+document.getElementById('page-banner')
+document.getElementsByClassName('title');	<< return HTMLColletion
+document.getElementsByTagName('li')		<< return HTMLColletion
+
+
+Array.from(titles).forEach(function(item){	<< HTMLCollection has to turn into array before looping
+   console.log(item);
+});
+
+
+document.querySelector('#book-list li:nth-child(2) .name');	
+document.querySelectorAll('#book-list li .name');		<< return NodeList, can loop through
+
+books.forEach(function (book) {
+    console.log(book);
+});
+
+
+titles[0]
+book.textContent
+book.textContent = 'text';		<< change it
+book.textContent += ' (booktitle)';	<< append it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

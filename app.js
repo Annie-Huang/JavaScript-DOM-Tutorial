@@ -51,13 +51,32 @@
 //
 // var books = document.querySelectorAll('#book-list li .name'); // Return a NodeList
 // console.log(books);
-// Array.from(books).forEach(function (book) {
+// // Array.from(books).forEach(function (book) {
+// //     console.log(book);
+// // });
+// // Unlike HTMLCollection, the Nodelist doesn't need to turn into a array to look though
+// books.forEach(function (book) {
 //     console.log(book);
 // });
 //
 // // Even though it only got one, it will still put it inside a NodeList.
 // var wrapper = document.querySelectorAll('#wrapper');
 // console.log(wrapper);
+
+// // #5 - Changing Text & HTML Content
+// var books = document.querySelectorAll('#book-list li .name');
+// books.forEach(function (book) {
+//     console.log(book.textContent);
+//     // book.textContent = 'text';
+//     book.textContent += ' (booktitle)';
+// });
+//
+// const bookList = document.querySelector('#book-list');
+// console.log(bookList.innerHTML);
+// // bookList.innerHTML = '<h2>Books and more books...</h2>';
+// bookList.innerHTML += '<p>This is how you add HTML</p>';
+
+
 
 console.log(document);
 
