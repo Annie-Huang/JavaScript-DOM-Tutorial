@@ -316,6 +316,31 @@
 //     })
 // });
 
+// // #17 - Tabbed Content
+// const tabs = document.querySelector('.tabs');
+// const panels = document.querySelectorAll('.panel');
+// tabs.addEventListener('click', function (e) {
+//     console.log(e.target.tagName); // Don't know why it is not 'li'...
+//
+//     if(e.target.tagName == 'LI') {
+//         // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
+//         // The dataset property on the HTMLElement interface provides read/write access to
+//         // all the custom data attributes (data-*) set on the element.
+//         const targetPanel = document.querySelector(e.target.dataset.target);    // dataset.target refer to data-target
+//         console.log(e.target.dataset.target);
+//         console.log(targetPanel);
+//
+//         panels.forEach(function (panel) {
+//             if(panel === targetPanel) {
+//                 panel.classList.add('active');
+//             } else {
+//                 panel.classList.remove('active');
+//             }
+//         })
+//     }
+// });
+
+
 console.log(document);
 
 

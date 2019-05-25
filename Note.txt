@@ -119,6 +119,7 @@ li.style.color='red';
 li.style.marginTop='60px'; << margin-top
 li.className='test'
 bookName.classList.add('name');		<< can add classname one by one, like append, rather than bookname.classname+=' name'
+					<< also if the classname is already there, it won't add again. very good function.
 bookName.classList.remove('name');
 
 book.getAttribute('class')
@@ -139,7 +140,7 @@ hideBox.checked			<< hideBox is a checkbox
 list.style.display = 'none';	<< hide the list.
 list.style.display = 'initial';	<< or block to show the list.
 
-
+e.target.tagName
 
 
 
