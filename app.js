@@ -137,6 +137,26 @@
 //     console.log('navigation to', e.target.textContent, 'was prevented');
 // });
 
+
+// // #10 - Event Bubbling
+// // E.g. when you click the first delete, it is originated in part 1. But it will bubble up.
+// //      So if li (Part 2) has an eventlistener, it will be fired as well.
+// // <li>     <-- Part 2
+// //      <span class="name">Name of the Wind</span>
+// //      <span class="delete">delete</span>      <-- Part 1.
+// // </li>
+//
+// // delete books
+// // It's expensive to attach a eventlistener to every child, e.g. on li within a ul. The general practise is to add it to the parent.
+// // When the event is fired, find out which child triggers it and delete taht child.
+// const list = document.querySelector('#book-list ul');
+// list.addEventListener('click', function (e) {
+//     if(e.target.className == 'delete') {
+//         const li = e.target.parentElement;
+//         list.removeChild(li);
+//     }
+// });
+
 console.log(document);
 
 

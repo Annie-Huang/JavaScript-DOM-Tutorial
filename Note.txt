@@ -100,3 +100,4 @@ li.parentNode.removeChild(li);
 
 e.preventDefault();	<< prevent default behavior, e.g. when clicking a <a href=..> link, prevent it to go to the other site.
 e.target.textContent
+e.target.className
