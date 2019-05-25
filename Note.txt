@@ -111,6 +111,8 @@ addForm.addEventListener('submit', function (e) {
     console.log(value);
 });
 
+document.createElement('li');
+li.appendChild(bookName);
 
 
 

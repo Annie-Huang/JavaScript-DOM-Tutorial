@@ -170,6 +170,15 @@
 // // form will refresh your page if you don't have an action to fire, that is why when you delete some book,
 // // and click add, it will refresh teh page. And you don't want this to happened so prevent default.
 //
+// // delete books
+// const list = document.querySelector('#book-list ul');
+// list.addEventListener('click', function (e) {
+//     if(e.target.className == 'delete') {
+//         const li = e.target.parentElement;
+//         list.removeChild(li);
+//     }
+// });
+//
 // // add book-list
 // const addForm = document.forms['add-book'];
 // addForm.addEventListener('submit', function (e) {
@@ -178,6 +187,42 @@
 //     const value = addForm.querySelector('input[type="text"]').value;
 //     console.log(value);
 // });
+
+// // #12 - Creating Elements
+// // delete books
+// const list = document.querySelector('#book-list ul');
+// list.addEventListener('click', function (e) {
+//     if(e.target.className == 'delete') {
+//         const li = e.target.parentElement;
+//         list.removeChild(li);
+//     }
+// });
+// // add book-list
+// const addForm = document.forms['add-book'];
+// addForm.addEventListener('submit', function (e) {
+//     // prevent submissiion and then refresh the page
+//     e.preventDefault();
+//     const value = addForm.querySelector('input[type="text"]').value;
+//     console.log(value);
+//
+//     // create elements
+//     const li = document.createElement('li');
+//     const bookName = document.createElement('span');
+//     const deleteBtn = document.createElement('span');
+//
+//     // add content
+//     deleteBtn.textContent='delete';
+//     bookName.textContent=value;
+//
+//     // append to document
+//     li.appendChild(bookName);
+//     li.appendChild(deleteBtn);
+//     list.appendChild(li);
+//
+// });
+
+
+
 
 console.log(document);
 
