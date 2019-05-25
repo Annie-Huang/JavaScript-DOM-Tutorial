@@ -157,6 +157,28 @@
 //     }
 // });
 
+
+// // #11 - Interacting with Forms
+// console.log(document.forms);
+// console.log(document.forms['add-book']);
+//
+// // Button type: (https://www.w3schools.com/jsref/prop_pushbutton_type.asp)
+// // submit	The button is a submit button (this is default for all browsers, except Internet Explorer)
+// // button	The button is a clickable button (this is default for Internet Explorer)
+// // reset	The button is a reset button (clears form data)
+//
+// // form will refresh your page if you don't have an action to fire, that is why when you delete some book,
+// // and click add, it will refresh teh page. And you don't want this to happened so prevent default.
+//
+// // add book-list
+// const addForm = document.forms['add-book'];
+// addForm.addEventListener('submit', function (e) {
+//     // prevent submissiion and then refresh the page
+//     e.preventDefault();
+//     const value = addForm.querySelector('input[type="text"]').value;
+//     console.log(value);
+// });
+
 console.log(document);
 
 
