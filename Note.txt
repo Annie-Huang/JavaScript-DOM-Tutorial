@@ -33,6 +33,7 @@ A text is a node (text node): Bookorama
 A comment is a node: <!-- this is a comment -->
 An attribute is a node: id="page-banner" inside a <div id="page-banner">
 
+-------
 
 document.getElementById('page-banner')
 document.getElementsByClassName('title');	<< return HTMLColletion
@@ -43,6 +44,7 @@ Array.from(titles).forEach(function(item){	<< HTMLCollection has to turn into ar
    console.log(item);
 });
 
+-------
 
 document.querySelector('#book-list li:nth-child(2) .name');	
 document.querySelectorAll('#book-list li .name');		<< return NodeList, can loop through
@@ -51,6 +53,7 @@ books.forEach(function (book) {
     console.log(book);
 });
 
+-------
 
 titles[0]
 book.textContent
@@ -59,6 +62,9 @@ book.textContent += ' (booktitle)';	<< append it
 bookList.innerHTML
 bookList.innerHTML = '<h2>Books and more books...</h2>';
 
+-------
+
+https://www.w3schools.com/jsref/prop_node_nodetype.asp
 const banner = document.querySelector('#page-banner');
 banner.nodeType		<< return 1, Element
 banner.nodeName		<< return div
@@ -79,8 +85,18 @@ bookList.previousSibling
 bookList.previousElementSibling
 bookList.previousElementSibling.querySelector('p').innerHTML += '<br>Too cool for everyone else!';
 
+-------
 
+https://www.w3schools.com/jsref/dom_obj_event.asp
+h2.addEventListener('click', function (e) {
+    console.log(e.target);  // log the element
+    // log MouseEvent, it got clientX, clientY (X,Y position on the click), shiftKey (whether you press shift key when you make the click)
+    // many interesting things, take a look
+    console.log(e);
+});
 
+const li = e.target.parentElement;	<< how to remove itself. Can use parentElement or parentNode for both
+li.parentNode.removeChild(li);
 
-
-
+e.preventDefault();	<< prevent default behavior, e.g. when clicking a <a href=..> link, prevent it to go to the other site.
+e.target.textContent
