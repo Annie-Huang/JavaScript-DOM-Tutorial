@@ -267,6 +267,17 @@
 //
 // });
 
+// // #14 -Atributes
+// var book = document.querySelector('li:first-child .name');
+// console.log(book);
+// console.log(book.getAttribute('class'));
+// console.log(book.getAttribute('href'));
+// console.log(book.setAttribute('class', 'name-2'));
+// console.log(book);
+// console.log(book.hasAttribute('class'));
+// console.log(book.removeAttribute('class'));
+// console.log(book);
+
 console.log(document);
 
 

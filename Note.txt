@@ -120,8 +120,11 @@ li.className='test'
 bookName.classList.add('name');		<< can add classname one by one, like append, rather than bookname.classname+=' name'
 bookName.classList.remove('name');
 
-
-
+book.getAttribute('class')
+book.getAttribute('href')
+book.setAttribute('class', 'name-2')
+book.hasAttribute('class')
+book.removeAttribute('class')
 
 
 
