@@ -126,8 +126,15 @@ book.setAttribute('class', 'name-2')
 book.hasAttribute('class')
 book.removeAttribute('class')
 
+hideBox.addEventListener('change', function (e) {   // change value in the checkbox
+    if(hideBox.checked) {
+        list.style.display = 'none';
+    }
+});
 
-
+hideBox.checked			<< hideBox is a checkbox
+list.style.display = 'none';	<< hide the list.
+list.style.display = 'initial';	<< or block to show the list.
 
 
 

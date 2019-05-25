@@ -278,6 +278,22 @@
 // console.log(book.removeAttribute('class'));
 // console.log(book);
 
+// // #15 - Checkboxes & Change Events
+// // change event occurs when a form element changes, e.g. when we select a checkbox
+//
+// const list = document.querySelector('#book-list ul');
+//
+// // hide books
+// const hideBox = document.querySelector('#hide');
+// console.log(hideBox);
+// hideBox.addEventListener('change', function (e) {   // change value in the checkbox
+//     if(hideBox.checked) {
+//         list.style.display = 'none';
+//     } else {
+//         list.style.display = 'initial';
+//     }
+// });
+
 console.log(document);
 
 
