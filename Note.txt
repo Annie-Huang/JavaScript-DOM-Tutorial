@@ -78,6 +78,7 @@ bookList.parentElement.parentElement
 
 bookList.childNodes	<< return [text, h2.title, text, ul, text], which include all linebreak characters as well. Not useful. Use children instead.
 bookList.children	<< retrurn [h2.title, ul]
+book.firstElementChild
 
 bookList.nextSibling	<< return #text, the line break character again.
 bookList.nextElementSibling	<< return the <form> now
@@ -129,6 +130,8 @@ book.removeAttribute('class')
 hideBox.addEventListener('change', function (e) {   // change value in the checkbox
     if(hideBox.checked) {
         list.style.display = 'none';
+    } else {
+        list.style.display = 'initial';
     }
 });
 
