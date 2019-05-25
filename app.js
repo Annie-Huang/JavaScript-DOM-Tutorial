@@ -189,7 +189,7 @@
 // });
 
 // // #12 - Creating Elements
-// // delete books
+// delete books
 // const list = document.querySelector('#book-list ul');
 // list.addEventListener('click', function (e) {
 //     if(e.target.className == 'delete') {
@@ -203,7 +203,7 @@
 //     // prevent submissiion and then refresh the page
 //     e.preventDefault();
 //     const value = addForm.querySelector('input[type="text"]').value;
-//     console.log(value);
+//     // console.log(value);
 //
 //     // create elements
 //     const li = document.createElement('li');
@@ -221,8 +221,51 @@
 //
 // });
 
-
-
+// // #13 - Styles & Classes
+// var li = document.querySelector('li:last-child');
+// li.style.color='red';
+// li.style.marginTop='60px'; // margin-top
+// li.className = 'test';
+// li.className += ' test2';
+//
+// console.log(li);
+// console.log(li.className);
+//
+// // delete books
+// const list = document.querySelector('#book-list ul');
+// list.addEventListener('click', function (e) {
+//     if(e.target.className == 'delete') {
+//         const li = e.target.parentElement;
+//         list.removeChild(li);
+//     }
+// });
+// // add book-list
+// const addForm = document.forms['add-book'];
+// addForm.addEventListener('submit', function (e) {
+//     // prevent submissiion and then refresh the page
+//     e.preventDefault();
+//     const value = addForm.querySelector('input[type="text"]').value;
+//     // console.log(value);
+//
+//     // create elements
+//     const li = document.createElement('li');
+//     const bookName = document.createElement('span');
+//     const deleteBtn = document.createElement('span');
+//
+//     // add content
+//     deleteBtn.textContent='delete';
+//     bookName.textContent=value;
+//
+//     // add classes
+//     bookName.classList.add('name');
+//     deleteBtn.classList.add('delete');
+//
+//     // append to document
+//     li.appendChild(bookName);
+//     li.appendChild(deleteBtn);
+//     list.appendChild(li);
+//
+// });
 
 console.log(document);
 

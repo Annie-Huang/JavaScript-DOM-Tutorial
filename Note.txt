@@ -114,9 +114,11 @@ addForm.addEventListener('submit', function (e) {
 document.createElement('li');
 li.appendChild(bookName);
 
-
-
-
+li.style.color='red';
+li.style.marginTop='60px'; << margin-top
+li.className='test'
+bookName.classList.add('name');		<< can add classname one by one, like append, rather than bookname.classname+=' name'
+bookName.classList.remove('name');
 
 
 
