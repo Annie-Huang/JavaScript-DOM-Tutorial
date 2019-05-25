@@ -1,3 +1,8 @@
+// This allows you to place the app.js anywhere, put it at the bottom of the body or put it in the head.
+document.addEventListener('DOMContentLoaded', function () {
+    
+
+
 // // #2 - Get Element By ID
 // console.log(document.getElementById('page-banner'));
 // var banner = document.getElementById('page-banner');
@@ -316,29 +321,36 @@
 //     })
 // });
 
-// // #17 - Tabbed Content
-// const tabs = document.querySelector('.tabs');
-// const panels = document.querySelectorAll('.panel');
-// tabs.addEventListener('click', function (e) {
-//     console.log(e.target.tagName); // Don't know why it is not 'li'...
-//
-//     if(e.target.tagName == 'LI') {
-//         // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
-//         // The dataset property on the HTMLElement interface provides read/write access to
-//         // all the custom data attributes (data-*) set on the element.
-//         const targetPanel = document.querySelector(e.target.dataset.target);    // dataset.target refer to data-target
-//         console.log(e.target.dataset.target);
-//         console.log(targetPanel);
-//
-//         panels.forEach(function (panel) {
-//             if(panel === targetPanel) {
-//                 panel.classList.add('active');
-//             } else {
-//                 panel.classList.remove('active');
-//             }
-//         })
-//     }
-// });
+// #17 - Tabbed Content
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.panel');
+tabs.addEventListener('click', function (e) {
+    console.log(e.target.tagName); // Don't know why it is not 'li'...
+
+    if(e.target.tagName == 'LI') {
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
+        // The dataset property on the HTMLElement interface provides read/write access to
+        // all the custom data attributes (data-*) set on the element.
+        const targetPanel = document.querySelector(e.target.dataset.target);    // dataset.target refer to data-target
+        console.log(e.target.dataset.target);
+        console.log(targetPanel);
+
+        panels.forEach(function (panel) {
+            if(panel === targetPanel) {
+                panel.classList.add('active');
+            } else {
+                panel.classList.remove('active');
+            }
+        })
+    }
+});
+
+// #18 - DOMContentLoaded Event
+// Need to have document.addEventListener('DOMContentLoaded' function(){})
+// wrapped on everything if the app.js is on the top in the header because the DOM is loaded.
+
+
+});
 
 
 console.log(document);
