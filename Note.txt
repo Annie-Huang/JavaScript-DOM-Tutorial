@@ -19,6 +19,21 @@ D:\react\JavaScript-DOM-Tutorial>git push -u origin master
 
 #################################################################################
 
+Everything comes in the DOM is a node.
+https://www.w3schools.com/jsref/prop_node_nodetype.asp
+An element is a node:
+        <div id="page-banner">
+            <h1 class="title">Bookorama</h1>
+            <p>Books for Ninjas</p>
+            <form id="search-books">
+                <input type="text" placeholder="Search books..." />
+            </form>
+        </div>
+A text is a node (text node): Bookorama
+A comment is a node: <!-- this is a comment -->
+An attribute is a node: id="page-banner" inside a <div id="page-banner">
+
+
 document.getElementById('page-banner')
 document.getElementsByClassName('title');	<< return HTMLColletion
 document.getElementsByTagName('li')		<< return HTMLColletion
@@ -41,14 +56,14 @@ titles[0]
 book.textContent
 book.textContent = 'text';		<< change it
 book.textContent += ' (booktitle)';	<< append it
+bookList.innerHTML
+bookList.innerHTML = '<h2>Books and more books...</h2>';
 
-
-
-
-
-
-
-
+const banner = document.querySelector('#page-banner');
+banner.nodeType		<< return 1, Element
+banner.nodeName		<< return div
+banner.hasChildNodes()	<< return true
+banner.cloneNode(true);	<< clone node with its child
 
 
 
